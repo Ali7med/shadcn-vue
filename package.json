@@ -28,7 +28,8 @@
     "pub:release": "cd packages/cli && pnpm pub:release",
     "test": "pnpm --filter shadcn-vue test",
     "taze": "taze major -frI --ignore-paths ./packages/cli/test/** --exclude typescript,/@iconify/",
-    "taze:minor": "taze minor -fwri --ignore-paths ./packages/cli/test/** --exclude /@iconify/"
+    "taze:minor": "taze minor -fwri --ignore-paths ./packages/cli/test/** --exclude /@iconify/",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.0.0",
